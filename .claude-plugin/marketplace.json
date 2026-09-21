@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "bucky",
+  "owner": {
+    "name": "Bucky",
+    "url": "https://buckybuild.com"
+  },
+  "metadata": {
+    "description": "Cited site feasibility and pre-development project workflows for Canada and the United States.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "bucky",
+      "source": "./",
+      "description": "Cited site feasibility and pre-development project workflows for Canada and the United States.",
+      "homepage": "https://docs.buckybuild.com/docs/mcp",
+      "license": "Apache-2.0",
+      "category": "productivity",
+      "keywords": ["construction", "feasibility", "property", "zoning", "mcp"]
+    }
+  ]
+}

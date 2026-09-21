@@ -1,0 +1,36 @@
+{
+  "name": "bucky",
+  "version": "1.0.0",
+  "description": "Cited site feasibility and pre-development project workflows for Canada and the United States.",
+  "author": {
+    "name": "Bucky",
+    "url": "https://buckybuild.com"
+  },
+  "homepage": "https://docs.buckybuild.com/docs/mcp",
+  "repository": "https://github.com/markbucky/bucky-plugin",
+  "license": "Apache-2.0",
+  "keywords": ["construction", "feasibility", "property", "zoning"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Bucky",
+    "shortDescription": "Cited site feasibility and project planning.",
+    "longDescription": "Check what a site may support, interpret zoning evidence, save a project, run feasibility analysis, and prepare cited project reports with Bucky.",
+    "developerName": "Bucky",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://buckybuild.com",
+    "privacyPolicyURL": "https://buckybuild.com/en/privacy",
+    "termsOfServiceURL": "https://buckybuild.com/en/terms",
+    "defaultPrompt": "Check what I may be able to build at a specific address with cited zoning evidence.",
+    "brandColor": "#002883",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.svg",
+    "screenshots": [
+      "./assets/screenshot-site-feasibility.png",
+      "./assets/screenshot-project-context.png",
+      "./assets/screenshot-change-review.png",
+      "./assets/screenshot-status-reference.png"
+    ]
+  }
+}

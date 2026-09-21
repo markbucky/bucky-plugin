@@ -1,0 +1,11 @@
+interface:
+  display_name: 'Explain Feasibility Status'
+  short_description: 'Interpret Bucky evidence and coverage states'
+  default_prompt: 'Use $explain-feasibility-status to explain this Bucky result status.'
+dependencies:
+  tools:
+    - type: 'mcp'
+      value: 'bucky'
+      description: 'Bucky site feasibility and project tools'
+      transport: 'streamable_http'
+      url: 'https://buckybuild.com/api/mcp'

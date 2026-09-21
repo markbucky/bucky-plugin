@@ -1,0 +1,11 @@
+interface:
+  display_name: 'Site Feasibility'
+  short_description: 'Check cited zoning and site constraints'
+  default_prompt: 'Use $site-feasibility to check what I may be able to build at this address.'
+dependencies:
+  tools:
+    - type: 'mcp'
+      value: 'bucky'
+      description: 'Bucky site feasibility and project tools'
+      transport: 'streamable_http'
+      url: 'https://buckybuild.com/api/mcp'

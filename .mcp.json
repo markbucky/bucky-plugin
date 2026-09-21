@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "bucky": {
+      "type": "http",
+      "url": "https://buckybuild.com/api/mcp"
+    }
+  }
+}

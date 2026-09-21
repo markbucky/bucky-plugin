@@ -1,0 +1,11 @@
+interface:
+  display_name: 'Save and Analyze Project'
+  short_description: 'Create and analyze a Bucky project safely'
+  default_prompt: 'Use $save-and-analyze-project to save this site and run Bucky feasibility analysis.'
+dependencies:
+  tools:
+    - type: 'mcp'
+      value: 'bucky'
+      description: 'Bucky site feasibility and project tools'
+      transport: 'streamable_http'
+      url: 'https://buckybuild.com/api/mcp'
