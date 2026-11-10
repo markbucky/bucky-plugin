@@ -16,6 +16,6 @@ Call `produceProjectReport` first with:
 
 Present the report plan and identify material unknown, conditional, or uncited facts. A preview does not create a PDF and does not spend the export meter.
 
-Export only after the user explicitly confirms the preview. Then call `produceProjectReport` with `preview: false` and `confirm: true`. Explain that export spends the `records.exports` meter and cannot be undone. Return the signed download link promptly because it is short-lived, and include the receipt ID.
+Export only after the user explicitly confirms the preview. Then call `produceProjectReport` with `preview: false`, `confirm: true`, and the previewId value from the preview result. With it, the PDF is exactly the text the user read. Without it, Bucky composes the report again and the text can differ. If the result is `PREVIEW_EXPIRED`, preview again and show the new text before you export. Explain that export spends the `records.exports` meter and cannot be undone. Return the signed download link promptly because it is short-lived, and include the receipt ID.
 
 Keep the report's conclusions proportional to the evidence. Bucky reports are preliminary decision support, not permits, appraisals, guarantees, or professional legal, engineering, or architectural opinions.

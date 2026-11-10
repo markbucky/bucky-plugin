@@ -1,0 +1,11 @@
+interface:
+  display_name: 'Find Markets'
+  short_description: 'Rank places by their rental market'
+  default_prompt: 'Use $find-markets to find places with a tight rental market.'
+dependencies:
+  tools:
+    - type: 'mcp'
+      value: 'bucky'
+      description: 'Bucky site feasibility and project tools'
+      transport: 'streamable_http'
+      url: 'https://buckybuild.com/api/mcp'

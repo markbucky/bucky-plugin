@@ -1,0 +1,11 @@
+interface:
+  display_name: 'Getting Started'
+  short_description: 'Connect, set up your profile, and choose the next step'
+  default_prompt: 'Use $getting-started to connect to Bucky and tell me what to do next.'
+dependencies:
+  tools:
+    - type: 'mcp'
+      value: 'bucky'
+      description: 'Bucky site feasibility and project tools'
+      transport: 'streamable_http'
+      url: 'https://buckybuild.com/api/mcp'

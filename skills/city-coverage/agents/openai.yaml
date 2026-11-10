@@ -1,0 +1,11 @@
+interface:
+  display_name: 'City Coverage'
+  short_description: 'See what Bucky has mapped for a city'
+  default_prompt: 'Use $city-coverage to check whether Bucky covers this city.'
+dependencies:
+  tools:
+    - type: 'mcp'
+      value: 'bucky'
+      description: 'Bucky site feasibility and project tools'
+      transport: 'streamable_http'
+      url: 'https://buckybuild.com/api/mcp'

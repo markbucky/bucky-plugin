@@ -1,0 +1,11 @@
+interface:
+  display_name: 'Saved Work'
+  short_description: 'List and organize saved lots, lists and projects'
+  default_prompt: 'Use $saved-work to show what I have saved in Bucky.'
+dependencies:
+  tools:
+    - type: 'mcp'
+      value: 'bucky'
+      description: 'Bucky site feasibility and project tools'
+      transport: 'streamable_http'
+      url: 'https://buckybuild.com/api/mcp'

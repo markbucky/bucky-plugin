@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "bucky",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "Cited site feasibility and pre-development project workflows for Canada and the United States.",
   "author": {
     "name": "Bucky",
@@ -16,7 +16,7 @@
       "interface": {
         "displayName": "Bucky",
         "shortDescription": "Cited site feasibility and project planning.",
-        "longDescription": "Check what a site may support, interpret zoning evidence, save a project, run feasibility analysis, and prepare cited project reports with Bucky.",
+        "longDescription": "Check what a site may support, interpret zoning evidence, rank cities by rental market, find lots that match a list, organize saved lots, save a project, run feasibility analysis, and prepare cited project reports with Bucky.",
         "developerName": "Bucky",
         "category": "Productivity",
         "capabilities": ["Read", "Write"],
@@ -25,8 +25,8 @@
         "termsOfServiceURL": "https://buckybuild.com/en/terms",
         "defaultPrompt": [
           "What can I build at this address?",
-          "Save this site as a Bucky project and run feasibility analysis.",
-          "Prepare a cited project report for an investor."
+          "Find lots in this city that match my criteria.",
+          "Which cities have the tightest rental market?"
         ],
         "brandColor": "#002883",
         "composerIcon": "./assets/icon.png",

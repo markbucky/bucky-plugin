@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "bucky",
   "displayName": "Bucky",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "Cited site feasibility and pre-development project workflows for Canada and the United States.",
   "author": {
     "name": "Bucky",
@@ -11,6 +11,7 @@
   "homepage": "https://docs.buckybuild.com/docs/mcp",
   "repository": "https://github.com/markbucky/bucky-plugin",
   "license": "Apache-2.0",
+  "privacyPolicyUrl": "https://buckybuild.com/en/privacy",
   "keywords": ["construction", "feasibility", "property", "zoning"],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json"
