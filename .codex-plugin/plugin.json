@@ -25,7 +25,7 @@
     "defaultPrompt": "Check what I may be able to build at a specific address with cited zoning evidence.",
     "brandColor": "#002883",
     "composerIcon": "./assets/icon.png",
-    "logo": "./assets/logo.svg",
+    "logo": "./assets/logo.png",
     "screenshots": [
       "./assets/screenshot-site-feasibility.png",
       "./assets/screenshot-project-context.png",
