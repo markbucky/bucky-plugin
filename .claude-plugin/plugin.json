@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "bucky",
   "displayName": "Bucky",
-  "version": "2.1.1",
-  "description": "Cited site feasibility and pre-development project workflows for Canada and the United States.",
+  "version": "2.1.2",
+  "description": "Compare markets, find lots that fit a buy box, check what a site allows, and prepare cited feasibility reports for land and buildings in Canada and the United States.",
   "author": {
     "name": "Bucky",
     "url": "https://buckybuild.com"
@@ -12,7 +12,16 @@
   "repository": "https://github.com/markbucky/bucky-plugin",
   "license": "Apache-2.0",
   "privacyPolicyUrl": "https://buckybuild.com/en/privacy",
-  "keywords": ["construction", "feasibility", "property", "zoning"],
+  "keywords": [
+    "construction",
+    "feasibility",
+    "property",
+    "zoning",
+    "real-estate",
+    "site-selection",
+    "land",
+    "parcels"
+  ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json"
 }

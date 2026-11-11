@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "bucky",
-  "version": "2.1.1",
-  "description": "Cited site feasibility and pre-development project workflows for Canada and the United States.",
+  "version": "2.1.2",
+  "description": "Compare markets, find lots that fit a buy box, check what a site allows, and prepare cited feasibility reports for land and buildings in Canada and the United States.",
   "author": {
     "name": "Bucky",
     "url": "https://buckybuild.com"
@@ -10,13 +10,22 @@
   "homepage": "https://docs.buckybuild.com/docs/mcp",
   "repository": "https://github.com/markbucky/bucky-plugin",
   "license": "Apache-2.0",
-  "keywords": ["construction", "feasibility", "property", "zoning"],
+  "keywords": [
+    "construction",
+    "feasibility",
+    "property",
+    "zoning",
+    "real-estate",
+    "site-selection",
+    "land",
+    "parcels"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "Bucky",
-        "shortDescription": "Cited site feasibility and project planning.",
-        "longDescription": "Check what a site may support, interpret zoning evidence, rank cities by rental market, find lots that match a list, organize saved lots, save a project, run feasibility analysis, and prepare cited project reports with Bucky.",
+        "shortDescription": "Find sites that fit and see what you can build.",
+        "longDescription": "Compare markets on rents and vacancy, screen a covered city's lots against a buy box, and read why each lot matches. Check a site's zoning, permitted uses, and buildable envelope with the source behind each rule. Save sites to a project, run feasibility analysis, and prepare cited reports. Get the best localized data for your property work.",
         "developerName": "Bucky",
         "category": "Productivity",
         "capabilities": ["Read", "Write"],

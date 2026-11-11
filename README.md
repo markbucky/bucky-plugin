@@ -1,12 +1,22 @@
 # Bucky
 
-Cited site feasibility and pre-development project workflows for Canada and the
-United States, as a plugin and a hosted MCP server.
+Bucky helps you find properties that fit, check what you can build, and share
+the evidence behind the decision. This is Bucky as a plugin and a hosted MCP
+server, for land and buildings in Canada and the United States.
 
-Give it a street address and it returns the lot, the zone, the permitted uses,
-and the material envelope — setbacks, height, coverage, density — with each value
-carrying its own provenance. A setback the bylaw does not limit and a setback
-Bucky could not extract are different answers, and they stay different.
+- **Markets.** Compare places on available signals such as rents and vacancy,
+  and decide where to look.
+- **Lists.** Screen the lots Bucky holds for a covered city against a buy box,
+  and read why each lot matches and which criteria could not be applied.
+- **Sites.** Give it a street address and it returns the lot, the zone, the
+  permitted uses, and the material envelope — setbacks, height, coverage,
+  density — with each value carrying its own provenance. A setback the bylaw
+  does not limit and a setback Bucky could not extract are different answers,
+  and they stay different.
+- **Projects and reports.** Save a site to a project, run feasibility analysis,
+  and prepare a cited report for the next reader.
+
+Get the best localized data for your property work.
 
 ```
 https://buckybuild.com/api/mcp

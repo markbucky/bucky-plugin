@@ -6,18 +6,28 @@
     "url": "https://buckybuild.com"
   },
   "metadata": {
-    "description": "Cited site feasibility and pre-development project workflows for Canada and the United States.",
-    "version": "2.1.1"
+    "description": "Compare markets, find lots that fit a buy box, check what a site allows, and prepare cited feasibility reports for land and buildings in Canada and the United States.",
+    "version": "2.1.2"
   },
   "plugins": [
     {
       "name": "bucky",
       "source": "./",
-      "description": "Cited site feasibility and pre-development project workflows for Canada and the United States.",
+      "description": "Compare markets, find lots that fit a buy box, check what a site allows, and prepare cited feasibility reports for land and buildings in Canada and the United States.",
       "homepage": "https://docs.buckybuild.com/docs/mcp",
       "license": "Apache-2.0",
       "category": "productivity",
-      "keywords": ["construction", "feasibility", "property", "zoning", "mcp"]
+      "keywords": [
+        "construction",
+        "feasibility",
+        "property",
+        "zoning",
+        "real-estate",
+        "site-selection",
+        "land",
+        "parcels",
+        "mcp"
+      ]
     }
   ]
 }
