@@ -19,6 +19,15 @@ If a city name matches more than one place, the result lists the choices. Ask th
 
 - Group the datasets the way the result does: on file, not loaded yet, unavailable, or not confirmed. Do not say that a "not loaded yet" or "not confirmed" dataset is available.
 - This result is city coverage. It is not lot feasibility, and it does not tell you about service health. To check one address, use `previewSiteCoverage` (no sign-in) or `checkSite` (sign-in).
+- Relate the datasets to what the user wants to do. To assemble lots, for example, the user needs parcels, zoning, and owners: say which of those Bucky has in this city. Mention only the gaps that matter for that goal.
 - If Bucky has not mapped the place, say so plainly. Do not give a zoning answer from a web search or from memory instead. The result tells you how to record demand for the place. The call itself does not record demand.
 
-To find lots across a covered city, use the `screen-lots` skill.
+To find lots across a covered city, use the `screen-lots` skill, and pass the user's own words as `thesis`. Do not call `checkSite` to prepare a lot search.
+
+## How to answer
+
+- Use the user's own words. Do not add a role, market, budget, or criteria that the user did not give and that is not in their Bucky profile. If one missing answer changes the result, ask one short question.
+- Lead with the answer to the question, then the few facts that support it.
+- Write in plain words. Do not label each sentence as fact, inference, or assumption.
+- Say a limit once, where it matters to what the user wants to do. Do not list every gap in the data.
+- End with one next step that fits the result. Do not list every option.

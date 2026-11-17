@@ -15,12 +15,12 @@ Each project tool takes `projectId`, or `project` with the name the user said. Y
 
 ## Save a site
 
-1. If the request starts with an address, call `checkSite` first. Reuse its normalized address, coordinates, and `lot.parcelExternalId`; do not invent parcel identifiers.
+1. If the user gave a street address and no lot from Bucky, call `checkSite` first. Reuse its normalized address, coordinates, and `lot.parcelExternalId`; do not invent parcel identifiers. If the lots came from `screenLots` or `listSaved`, use their `address` and `parcelExternalId` and do not call `checkSite`: each call uses one of the user's monthly site checks.
 2. Call `saveToProject` with `preview: true`. For a new project use `action: create`. Include the address and, when returned by the snapshot, its coordinates.
 3. Show the proposed change and geography result. Warn that MCP cannot archive the new project or detach an attached parcel.
 4. Ask the user to confirm the preview. Only after confirmation, repeat the same operation with `preview: false`.
 5. For creation, use an idempotency key and reuse it only when retrying that exact operation. Do not reuse it for a different project.
-6. If a snapshot returned `lot.parcelExternalId` and the user asked to attach the site, preview and confirm a second `saveToProject` call with `action: attach_parcels`.
+6. If `checkSite` or `screenLots` returned a `parcelExternalId` and the user asked to attach the site, preview and confirm a second `saveToProject` call with `action: attach_parcels`.
 7. For an assembly of many lots, pass a WGS84 GeoJSON `polygon` with `action: attach_parcels` instead of parcel IDs. Do not combine a polygon with `parcelExternalIds` or `radiusM`. One polygon selects at most 500 parcels. In the preview, report `selectedParcelCount` and say if the selection was truncated.
 
 `action: attach_reference` links a bylaw section to a project. Use it only when the user asks to keep a source with the project.
@@ -41,3 +41,11 @@ Use `getProjectContext` to check the result. Pass `include` only for sections th
 If a write tool fails with "This connection is not signed in to Bucky", do not retry. Tell the user to sign in to Bucky first.
 
 Never claim that a preview wrote data, that a queued run is complete, or that an unresolved geography has usable zoning context.
+
+## How to answer
+
+- Use the user's own words. Do not add a role, market, budget, or criteria that the user did not give and that is not in their Bucky profile. If one missing answer changes the result, ask one short question.
+- Lead with the answer to the question, then the few facts that support it.
+- Write in plain words. Do not label each sentence as fact, inference, or assumption.
+- Say a limit once, where it matters to what the user wants to do. Do not list every gap in the data.
+- End with one next step that fits the result. Do not list every option.

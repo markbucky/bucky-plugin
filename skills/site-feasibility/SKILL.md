@@ -54,3 +54,11 @@ If the result has `exception`, read it before you report the envelope. It identi
 Do not save a project, attach parcels, or start analysis unless the user explicitly asks for that additional action.
 
 If a Bucky value looks wrong, tell the user. If the user wants to report it, call `submitBuckyFeedback`. A person reads that report. Call it only when the user asks to send feedback.
+
+## How to answer
+
+- Use the user's own words. Do not add a role, market, budget, or criteria that the user did not give and that is not in their Bucky profile. If one missing answer changes the result, ask one short question.
+- Lead with the answer to the question, then the few facts that support it.
+- Write in plain words. Do not label each sentence as fact, inference, or assumption.
+- Say a limit once, where it matters to what the user wants to do. Do not list every gap in the data.
+- End with one next step that fits the result. Do not list every option.

@@ -6,8 +6,8 @@ server, for land and buildings in Canada and the United States.
 
 - **Markets.** Compare places on available signals such as rents and vacancy,
   and decide where to look.
-- **Lists.** Screen the lots Bucky holds for a covered city against a buy box,
-  and read why each lot matches and which criteria could not be applied.
+- **Lists.** Screen the lots Bucky holds for a covered city against a list's
+  filters, and read why each lot matches and which filters could not be applied.
 - **Sites.** Give it a street address and it returns the lot, the zone, the
   permitted uses, and the material envelope — setbacks, height, coverage,
   density — with each value carrying its own provenance. A setback the bylaw
@@ -109,10 +109,10 @@ assessment → project → report. You can start at any step.
 - **List.** `screenLots` finds the lots in one city that match a list. It returns
   `screeningRunId` and the selected parcel IDs, with a `countOutcome` of exact,
   partial, at least, estimate, or unavailable.
-- **Shortlist.** `updateSaved` saves a lot without starting a project, and files
-  saved lots and projects in folders. `listSaved` reads them back.
+- **Shortlist.** `updateSaved` saves a lot without starting a project, and adds
+  saved lots and projects to lists you fill by hand. `listSaved` reads them back.
 - **Your work.** Call `listMyWork` before creating another list or project. It
-  lists your lists and the projects you own, with city, stored criteria, build-
+  lists your lists and the projects you own, with city, stored filters, build-
   parcel count, and feasibility state (`none`, `current`, `stale`, `queued`,
   `running`, or `failed`). `lastMatchCount` is the latest exact total for the
   current revision of a list; null means unmeasured, partial, unavailable, or
@@ -127,7 +127,7 @@ assessment → project → report. You can start at any step.
 Candidate assessments are bounded checks against a development brief. Their
 counts are separate from a search total. They run in the Bucky CLI:
 `bucky opportunities assess --box-id <id> --screening-run <execution-id> --input
-<brief.json> --dry-run`. Deleting a folder is also a CLI or web-app action.
+<brief.json> --dry-run`. Deleting a list is also a CLI or web-app action.
 
 ## Authentication
 

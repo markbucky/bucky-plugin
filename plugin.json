@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "bucky",
-  "version": "2.1.2",
-  "description": "Compare markets, find lots that fit a buy box, check what a site allows, and prepare cited feasibility reports for land and buildings in Canada and the United States.",
+  "version": "2.1.3",
+  "description": "Compare markets, find lots that match a list's filters, check what a site allows, and prepare cited feasibility reports for land and buildings in Canada and the United States.",
   "author": {
     "name": "Bucky",
     "url": "https://buckybuild.com"
@@ -25,7 +25,7 @@
       "interface": {
         "displayName": "Bucky",
         "shortDescription": "Find sites that fit and see what you can build.",
-        "longDescription": "Compare markets on rents and vacancy, screen a covered city's lots against a buy box, and read why each lot matches. Check a site's zoning, permitted uses, and buildable envelope with the source behind each rule. Save sites to a project, run feasibility analysis, and prepare cited reports. Get the best localized data for your property work.",
+        "longDescription": "Compare markets on rents and vacancy, screen a covered city's lots against a list's filters, and read why each lot matches. Check a site's zoning, permitted uses, and buildable envelope with the source behind each rule. Save sites to a project, run feasibility analysis, and prepare cited reports. Get the best localized data for your property work.",
         "developerName": "Bucky",
         "category": "Productivity",
         "capabilities": ["Read", "Write"],
