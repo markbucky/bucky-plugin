@@ -7,7 +7,7 @@
   },
   "metadata": {
     "description": "Compare markets, find lots that match a list's filters, check what a site allows, and prepare cited feasibility reports for land and buildings in Canada and the United States.",
-    "version": "2.1.3"
+    "version": "2.1.4"
   },
   "plugins": [
     {
